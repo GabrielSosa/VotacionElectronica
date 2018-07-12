@@ -1,0 +1,13 @@
+elmininar campo laidacion de la tabla usuarios
+editar campo imagen de la tabla usuarios varchar a longBlob
+quitar el campo voto xq no tiene sentido a menos que se un booleano
+si surge algun problema agregar el campo voto segido del campo fecha.
+
+
+tambien ver si puedo eliminar el campo fecha y tomarlo del sistema
+
+agregar campo correo seguido del campo direccion en la tabla usuarios
+
+cambiar fecha a DATE de la tabla usuarios
+
+y en el modelo de la clase modelo votantes canbiar fecha a DATE
