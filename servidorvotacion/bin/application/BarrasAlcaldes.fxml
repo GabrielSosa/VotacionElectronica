@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BarrasAlcaldesController">
+   <children>
+      <GridPane layoutX="20.0" layoutY="20.0" prefHeight="433.0" prefWidth="560.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#CerrarBarrasAlcades" prefHeight="25.0" prefWidth="70.0" text="Aceptar " GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <BarChart fx:id="bcGrafcoBarrasAlcaldes" prefHeight="406.0" prefWidth="560.0" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" tickLabelFill="#d36109" fx:id="xAxis">
+                     <tickLabelFont>
+                        <Font size="13.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="yAxis" side="LEFT" tickLabelFill="#d36109">
+                     <tickLabelFont>
+                        <Font size="13.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+               </yAxis>
+            </BarChart>
+            <Label fx:id="Etiquetaflotante" alignment="CENTER" contentDisplay="CENTER" text="Label" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="442.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="442.0" minHeight="10.0" prefHeight="392.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

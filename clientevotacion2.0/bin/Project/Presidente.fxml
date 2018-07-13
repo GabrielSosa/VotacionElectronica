@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane opacity="0.95" prefHeight="630.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.PresidenteController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="183.0" layoutY="63.0" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="366.0" text="Papeleta Presidente" textFill="#c41616">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <HBox fx:id="hBoxPrincipal1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="1024.0" />
+            <HBox fx:id="hBoxPrincipal2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="1024.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="1061.0">
+               <children>
+                  <ToggleButton fx:id="tglBlanco" mnemonicParsing="false" text="Blanco">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tglGrupo" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="tglNulo" mnemonicParsing="false" text="Nulo" toggleGroup="$tglGrupo">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="120.0" prefWidth="1061.0">
+               <children>
+                  <Button fx:id="btnSiguiente" disable="true" mnemonicParsing="false" onAction="#siguiente" text="Siguiente">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

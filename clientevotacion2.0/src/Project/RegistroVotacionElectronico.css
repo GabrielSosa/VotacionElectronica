@@ -1,0 +1,18 @@
+.root{
+   -fx-font-size: 9pt;
+    -fx-font-style:italic;
+    -fx-font-family: "Comic Sans MS";
+    -fx-base:rgb(25, 150, 178);
+   	-fx-background-image: url('../Imagenes/imagen.jpg');
+    -fx-background-position: center center ; 
+    -fx-background-repeat: stretch;
+    
+    }
+    
+.FlowPane{
+	-fx-font-size: 9pt;
+    -fx-font-style:italic;
+    -fx-font-family: "Comic Sans MS";
+    -fx-base:rgb(25, 150, 178);
+}
+

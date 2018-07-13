@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="448.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PastelPresidentesController">
+   <children>
+      <GridPane layoutX="231.0" layoutY="159.0" prefHeight="708.0" prefWidth="1110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnAceptarP" mnemonicParsing="false" onAction="#CerrarPastelPresidentes" text="Aceptar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <PieChart fx:id="chartGrafico" clockwise="false" labelLineLength="30.0" prefHeight="391.0" prefWidth="704.0" GridPane.halignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </PieChart>
+            <Label fx:id="Etiquetaflotante" alignment="CENTER" contentDisplay="CENTER" text="Label" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="464.0" minHeight="10.0" prefHeight="389.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

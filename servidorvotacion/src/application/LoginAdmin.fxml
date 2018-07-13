@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <GridPane layoutX="220.0" layoutY="216.0" prefHeight="500.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane prefHeight="227.0" prefWidth="623.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Usuario" textFill="#7204a1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombreUsuario" promptText="Ingrese su nombre de usuario" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="checkDescamarcar" mnemonicParsing="false" text="Desmarcar" textFill="#c917c9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <HBox alignment="CENTER" spacing="30.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <children>
+                        <Button fx:id="btnAceptar" lineSpacing="10.0" mnemonicParsing="false" onAction="#verificarContrasena" prefHeight="25.0" prefWidth="70.0" text="Aceptar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                           <opaqueInsets>
+                              <Insets right="10.0" />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btncancelar" lineSpacing="10.0" mnemonicParsing="false" onAction="#cerrarVentanaLogin" prefHeight="25.0" prefWidth="70.0" text="Cancelar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <opaqueInsets>
+                              <Insets left="10.0" right="10.0" />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets right="5.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Label fx:id="lblImagenLoign" contentDisplay="CENTER" prefHeight="22.0" prefWidth="98.0" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label text="Contraseña" textFill="#7204a1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textDesenmascarar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <PasswordField fx:id="txtContrasena" promptText="Ingrese su Contraseña" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="419.0" minWidth="0.0" prefWidth="246.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="183.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="195.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Label fx:id="lblMensaje" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="455.0" textAlignment="CENTER" textFill="#7204a1" textOverrun="CLIP" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="188.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="247.0" minHeight="10.0" prefHeight="232.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="111.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

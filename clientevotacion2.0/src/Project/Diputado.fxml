@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.DiputadoController">
+   <children>
+      <VBox fx:id="superVBox" alignment="TOP_CENTER" layoutX="183.0" layoutY="63.0" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="366.0" text="Papeleta Diputados" textFill="#d31515">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="1024.0">
+               <children>
+                  <ToggleButton fx:id="tglBlanco" mnemonicParsing="false" text="Blanco">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tglGrupo" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ToggleButton>
+                  <ToggleButton fx:id="tglNulo" mnemonicParsing="false" text="Nulo" toggleGroup="$tglGrupo">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ToggleButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="1024.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#atras" text="Atras">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSiguiente" disable="true" mnemonicParsing="false" onAction="#siguiente" text="Siguiente">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

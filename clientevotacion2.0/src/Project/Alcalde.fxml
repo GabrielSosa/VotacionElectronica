@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="641.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.AlcaldeController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="183.0" layoutY="63.0" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="366.0" text="Papeleta Alcalde" textFill="#d72b2b">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <HBox fx:id="hBoxPrincipal1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="1024.0" />
+            <HBox fx:id="hBoxPrincipal2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="1024.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="1024.0">
+               <children>
+                  <ToggleButton fx:id="tglBlanco" mnemonicParsing="false" text="Blanco">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tglGrupo" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ToggleButton>
+                  <ToggleButton fx:id="tglNulo" mnemonicParsing="false" text="Nulo" toggleGroup="$tglGrupo">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ToggleButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="1024.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#atras" text="Atras">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSiguiente" disable="true" mnemonicParsing="false" onAction="#siguiente" text="Siguiente">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

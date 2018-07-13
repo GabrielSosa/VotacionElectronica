@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="535.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ResultadoController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="34.0" layoutY="25.0" prefHeight="570.0" prefWidth="922.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="221.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="462.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="85.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="153.0" minHeight="0.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="509.0" minHeight="10.0" prefHeight="391.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="276.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="507.0" text="Resultado  de sus elecciones" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3142857142857143" endY="1.0" startX="0.6" startY="0.7380952380952381">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <VBox prefHeight="261.0" prefWidth="213.0" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="214.0" text="Nombre del Votante:" textFill="#e11414">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Fecha:" textFill="#e11414">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Presidente:" textFill="#e11414">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Alcalde:" textFill="#e11414">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Diputado:" textFill="#e11414">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="453.0" prefWidth="492.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="lblNomVotante" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="310.0" textFill="#f8f1f1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFecha" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="283.0" textFill="#f8f1f1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblNomPresidente" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="280.0" textFill="#f8f1f1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblNomAlcalde" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="278.0" textFill="#f8f1f1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <VBox fx:id="vBoxDiputados" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="209.0" prefWidth="474.0" />
+               </children>
+            </VBox>
+            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnEnviar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#TerminarVotacion" prefHeight="34.0" prefWidth="76.0" text="Enviar" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

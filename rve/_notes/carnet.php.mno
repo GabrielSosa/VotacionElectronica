@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_juego" value="name:nomcompleto;datatype:string,name:id;datatype:string" />
+	<infoitem key="UD_Recordset1" value="name:nomcompleto;datatype:string,name:id;datatype:string" />
+</info>

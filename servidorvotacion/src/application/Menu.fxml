@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane opacity="0.9" prefHeight="684.0" prefWidth="1167.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <BorderPane layoutX="356.0" layoutY="180.0" prefHeight="668.0" prefWidth="1108.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar fx:id="miMenuBar" prefHeight="24.0" prefWidth="1108.0" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <menus>
+                  <Menu mnemonicParsing="false" text="Archivo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#llamarVentanaTemporizador" text="Iniciar Elecciones" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#SalirDelPrograma" text="Salir del programa" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Acciones">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#llamarVentanaHistorial" text="Ver Historial" />
+                        <MenuItem mnemonicParsing="false" onAction="#llamarVentanaCandidatos" text="Ver Candidatos" />
+                        <MenuItem mnemonicParsing="false" onAction="#llamarVentanaVotantes" text="Ver  Votantes" />
+                        <MenuItem mnemonicParsing="false" onAction="#llamarVentanaEstadisticas" text="Ver Estadisticas" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Acerca del programa">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#llamarVentanaCreditos" text="Creditos" />
+                        <MenuItem mnemonicParsing="false" onAction="#AyudaMenu" text="Ayuda" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <left>
+            <GridPane prefHeight="674.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="240.0" minHeight="0.0" prefHeight="145.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="163.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="181.3333282470703" minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="162.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btncandidatos" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#llamarVentanaCandidatos" prefHeight="115.0" prefWidth="115.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Narrow" size="29.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5666666666666667" focusAngle="12.99" focusDistance="-0.4186046511627908" radius="1.0">
+                           <stops>
+                              <Stop color="#861510" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="btnVotantes" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#llamarVentanaVotantes" prefHeight="115.0" prefWidth="115.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Narrow" size="29.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5666666666666667" focusAngle="12.99" focusDistance="-0.4186046511627908" radius="1.0">
+                           <stops>
+                              <Stop color="#861510" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <ImageView fitHeight="136.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@../Imagenes/logo_is.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </left>
+         <right>
+            <GridPane prefHeight="639.0" prefWidth="227.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="3">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="60.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="10.0" prefWidth="22.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lblHora" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="149.0" text="00:00:00" textFill="#eeda01" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial Narrow" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFinaliza" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="159.0" text="00:00:00" textFill="#eeda01" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Narrow" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="156.0" text="Final:" textFill="#eeda01" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Narrow" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="159.0" text="Hora:" textFill="#eeda01">
+                           <font>
+                              <Font name="Arial Narrow" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="124.0" prefWidth="231.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="277.0" text="Proyecto IS - 410" textFill="#c2e305" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="Arial Narrow" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="291.0" text="Ingenieria Sistemas" textFill="#c2e305" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Narrow" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="btnHistorial" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#llamarVentanaHistorial" prefHeight="115.0" prefWidth="115.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Narrow" size="29.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5666666666666667" focusAngle="12.99" focusDistance="-0.4186046511627908" radius="1.0">
+                           <stops>
+                              <Stop color="#861510" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="btnEstadisticas" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#llamarVentanaEstadisticas" prefHeight="115.0" prefWidth="115.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Narrow" size="29.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5666666666666667" focusAngle="12.99" focusDistance="-0.4186046511627908" radius="1.0">
+                           <stops>
+                              <Stop color="#861510" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </GridPane>
+         </right>
+         <bottom>
+            <GridPane prefHeight="74.0" prefWidth="1168.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="436.0" text="Se ha iniciado sesión con el usuario:" textFill="#d7d30b" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSalirPrograma" alignment="CENTER" mnemonicParsing="false" onAction="#SalirDelPrograma" prefHeight="41.0" prefWidth="107.0" text="Salir" textAlignment="CENTER" textFill="#30322d" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblUsuario" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="181.0" textAlignment="CENTER" textFill="#d7d30b" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </bottom>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.33334350585938" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="659.0" minWidth="10.0" prefWidth="653.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.6666259765625" minWidth="10.0" prefWidth="41.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="218.33334350585938" minHeight="10.0" prefHeight="143.3333282470703" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="438.3333282470703" minHeight="10.0" prefHeight="401.6666717529297" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="73.0" prefWidth="361.0" text=" Menu Principal" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Arial Narrow" size="49.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5222222222222221" centerY="0.5619047619047619" cycleMethod="REPEAT" focusAngle="12.99" focusDistance="-0.4418604651162792" radius="0.7325581395348837">
+                           <stops>
+                              <Stop color="#2d41bac7" />
+                              <Stop color="#7c1e1e" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="LblIniciarVotacion" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="293.0" text="Iniciar Votación" textFill="#1896b29c" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Label>
+                  <HBox fx:id="HBoxIniciarVotacion" alignment="CENTER" onMouseClicked="#llamarVentanaTemporizador" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fx:id="ImgIniciarVotacion" fitHeight="420.0" fitWidth="518.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
